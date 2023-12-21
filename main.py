@@ -8,8 +8,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
 
+#saad saadmjamal@gmail.com eagle_HAWK001
+#moh mohammaddanishanjum3@gmail.com Bahadur04@0
+#joe cortez.joeseph4545@gmail.com Bahadur04@0
+
 #Credentials 
-MoussaEmail = "moussamobarak44@gmail.com"
+MoussaEmail = "cortez.joseph4545@gmail.com"
 MoussaPass = "Bahadur04@0"
 
 #Signing Into Dice
@@ -48,8 +52,6 @@ JobCount100.click()
 
 
 #Get IDs of each job card
-no2 = driver.find_element(By.XPATH, "/html/body/dhi-js-dice-client/div/dhi-search-page-container/dhi-search-page/div/dhi-search-page-results/div/div[3]/js-search-display/div/div[4]/div[1]/js-search-pagination-container/pagination/ul/li[3]")
-no2.click()
 time.sleep(10)
 jobIDs = []
 for i in range(1,100):
@@ -138,5 +140,4 @@ for jobID in jobIDs:
 
 print("\nSCRIPT COMPLETE\n")
 
-time.sleep(1000)
 driver.close()
